@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+select .imageR{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+select .imageR::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1005;
+    height: 100%;
+    background: linear-gradient(225deg,#e91e63,#03a9f4);
+    z-index: 1;
+    mix-blend-mode: screen;
+
+}
+section .imageR img{
+    position:  absolute;
+    top: 0;
+    left: 0;
+    width: 100;
+    height: 100%;
+    object-fit: cover;
+}
+section .contentbox{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 150%;
+height: 100%;
+
+}
+section .contentbox .formbx{
+    width: 50%;
+background-color: #e91e63;
+}
+section .contentbox .formbx h2{
+color: #03a9f4 ;
+font-weight: 600;
+font-size: 1.5em;
+text-transform: uppercase;
+margin-bottom: 20px;
+border-bottom: 4px solid  black;
+display:  inline-block;
+letter-spacing: 1px;
+
+}
+section .contentbox .formbx .inputbx{
+    margin-bottom: 20px;
+
+}
+section .contentbox .formbx .inputbx span{
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color:gainsboro;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+
+}
+section .contentbox .formbx .inputbx input{
+    width: 100px;
+    padding: 10px 20px;
+    outline: none;
+    font-weight: 400;
+    border: 1px solid #607;
+}
+
+
+.logincenter{
+    text-align: center;
+    /* margin: 25%; */
+    background-color:rgb(248, 243, 239);
+    height: 70vh;
+    padding: 50px;
+    border-radius: 60px;
+    margin: 70px;
+    
+
+
+
+}
+.formbx{
+   padding-top: 120px;
+}
+input{
+    border-radius: 10px;
+}
+button{
+   
+    border-radius: 10px;
+
+}
+
+
+h1{
+    text-align: center;
+    paddinG : 10PX;
+}
+img{
+    align-items: center;
+}
+.frombx{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+button a{
+    color: #fff;
+    text-decoration: none;
+}
+button a:hover{
+    color: white;
+}
