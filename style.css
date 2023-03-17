@@ -1,0 +1,171 @@
+ html,body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.navbar{
+    width: 100%;
+    padding: 20px;
+    background-color:lightpink;
+
+}
+.navbar .navbar-header
+{
+color: whitesmoke;
+font-size: 20px;
+text-decoration: none;
+margin-left: 50px;
+}
+
+@media ( min-width :600px){
+
+
+ .navbar .navbar-iteam{
+    position:absolute;
+    right: 0;
+    top: 5px;
+
+
+}
+.navbar .navbar-iteam ul li{
+    display: inline;
+    margin-right: 90px;
+ 
+
+
+
+}
+.navbar .navbar-iteam ul li a{
+    color: rgb(39, 24, 24);
+    text-decoration: none;
+    font-size: 20px;
+
+
+}
+
+.navbar .navbar-iteam ul li a:hover{
+    color: black;
+
+}
+
+.navbar-btn{
+    display: none;
+}
+}
+
+
+@media (max-width:600px){
+.navbar .navbar-iteam ul {
+    list-style: none;
+    padding: 0;
+
+}
+.navbar .navbar-iteam ul li{
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid black;
+
+
+}
+navbar .navbar-iteam ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+ }
+ .nav-btn{
+    border:none;
+    background: none;
+    border:1px solid white;
+    padding: 5px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer;
+
+ }
+ .nav-btn span{
+    display: block;
+    width: 20px;
+    border-top: 1px solid white;
+
+ }
+ .nav-btn span:not( :last-child){
+    margin-bottom: 5px;
+
+ }
+ .hide{
+    display: none;
+    
+ }
+} 
+/* its a second part os css processing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    
+}
+nav {
+    height: 100%;
+    width: 250px;
+    padding: absolute;
+    top: 0;
+    bottom: 0;
+    background:whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px rgba(0,0, 0, 1)
+    
+
+}
+nav ul{
+    position: relative;
+    list-style-type: none;
+}
+nav ul li a{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.15em;
+    text-decoration:none;
+    text-transform: capitalize;
+    color:black;
+    padding: 10px 30px;
+
+
+}
+nav ul li a:hover{
+    background-color: white;
+    color: pink;
+
+}
+nav ul ul{
+    position: absolute;
+    left: 250px;
+    width: 200px;
+    top: 0;
+    display: none;
+
+    background-color: gainsboro;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
+
+}
+nav ul  span{
+    position:absolute;
+    right: 20px;
+    font-size: 1.5em;
+}
+nav ul .dropdown{
+    position: relative;
+
+}
+ nav ul .dropdown:hover ul{
+    display: initial;
+} 
