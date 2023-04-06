@@ -1,80 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
 
 }
-section{
+
+section {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
 }
-select .imageR{
-    position: relative;
+
+section .contentbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
+    height: 100%;
+}
+
+section .contentbox .formbx {
     width: 50%;
-    height: 100%;
+    background-color: #e91e63;
 }
-select .imageR::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1005;
-    height: 100%;
-    background: linear-gradient(225deg,#e91e63,#03a9f4);
-    z-index: 1;
-    mix-blend-mode: screen;
 
-}
-section .imageR img{
-    position:  absolute;
-    top: 0;
-    left: 0;
-    width: 100;
-    height: 100%;
-    object-fit: cover;
-}
-section .contentbox{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 150%;
-height: 100%;
-
-}
-section .contentbox .formbx{
-    width: 50%;
-background-color: #e91e63;
-}
-section .contentbox .formbx h2{
-color: #03a9f4 ;
-font-weight: 600;
-font-size: 1.5em;
-text-transform: uppercase;
-margin-bottom: 20px;
-border-bottom: 4px solid  black;
-display:  inline-block;
-letter-spacing: 1px;
-
-}
-section .contentbox .formbx .inputbx{
+section .contentbox .formbx h2 {
+    color: #03a9f4;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-transform: uppercase;
     margin-bottom: 20px;
-
+    border-bottom: 4px solid black;
+    display: inline-block;
+    letter-spacing: 1px;
 }
-section .contentbox .formbx .inputbx span{
+
+section .contentbox .formbx .inputbx {
+    margin-bottom: 20px;
+}
+
+section .contentbox .formbx .inputbx span {
     font-size: 16px;
     margin-bottom: 5px;
     display: inline-block;
-    color:gainsboro;
+    color: gainsboro;
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 1px;
-
-
 }
-section .contentbox .formbx .inputbx input{
+
+section .contentbox .formbx .inputbx input {
     width: 100px;
     padding: 10px 20px;
     outline: none;
@@ -82,270 +59,243 @@ section .contentbox .formbx .inputbx input{
     border: 1px solid #607;
 }
 
-
-.logincenter{
+.logincenter {
     text-align: center;
     /* margin: 25%; */
-    background-color:rgb(248, 243, 239);
+    background-color: rgb(248, 243, 239);
     height: 70vh;
     padding: 50px;
     border-radius: 60px;
     margin: 70px;
-    
-
-
-
 }
-.formbx{
-   padding-top: 120px;
+
+.formbx {
+    padding-top: 120px;
 }
-input{
+
+input {
     border-radius: 10px;
 }
-button{
-   
-    border-radius: 10px;
 
+button {
+    border-radius: 10px;
 }
 
-
-h1{
+h1 {
     text-align: center;
-    paddinG : 10PX;
+    paddinG: 10PX;
 }
-img{
+
+img {
     align-items: center;
 }
-.frombx{
-    text-align: center;
-}
-h2{
+
+.frombx {
     text-align: center;
 }
 
-button a{
+h2 {
+    text-align: center;
+}
+
+button a {
     color: #fff;
     text-decoration: none;
 }
-button a:hover{
+
+button a:hover {
     color: white;
 }
-html,body{
-    
+
+html,
+body {
+
     margin: 0;
     padding: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
-.navbar{
+
+.navbar {
     width: 100%;
-    height:70px;
+    height: 70px;
     padding: 20px;
-    background-color:lightpink;
+    background-color: lightpink;
+}
 
+.navbar .navbar-header {
+    color: gray;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 50px;
 }
-.navbar .navbar-header
-{
-color: gray;
-font-size: 20px;
-text-decoration: none;
-margin-left: 50px;
-}
-.d-flex{
+
+.d-flex {
     text-align: center;
 }
 
-@media ( min-width :600px){
+@media (min-width :600px) {
+    .navbar .navbar-iteam {
+        position: absolute;
+        right: 0;
+        top: 16px;
+    }
 
+    .navbar .navbar-iteam ul li {
+        display: inline;
+        margin-right: 90px;
+    }
 
- .navbar .navbar-iteam{
-    position:absolute;
-    right: 0;
-    top: 16px;
+    .navbar .navbar-iteam ul li a {
+        color: rgb(39, 24, 24);
+        text-decoration: none;
+        font-size: 20px;
+    }
 
+    .navbar .navbar-iteam ul li a:hover {
+        color: black;
+    }
 
-}
-.navbar .navbar-iteam ul li{
-    display: inline;
-    margin-right: 90px;
- 
-
-
-
-}
-.navbar .navbar-iteam ul li a{
-    color: rgb(39, 24, 24);
-    text-decoration: none;
-    font-size: 20px;
-
-
-}
-
-.navbar .navbar-iteam ul li a:hover{
-    color: black;
-
+    .navbar-btn {
+        display: none;
+    }
 }
 
-.navbar-btn{
-    display: none;
+@media (max-width:600px) {
+    .navbar .navbar-iteam ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .navbar .navbar-iteam ul li {
+        margin-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid black;
+    }
+
+    .navbar .navbar-iteam ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .nav-btn {
+        border: none;
+        background: none;
+        border: 1px solid white;
+        padding: 5px;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .nav-btn span {
+        display: block;
+        width: 20px;
+        border-top: 1px solid white;
+
+    }
+
+    .nav-btn span:not( :last-child) {
+        margin-bottom: 5px;
+    }
+
+    .hide {
+        display: none;
+
+    }
 }
-}
 
-
-@media (max-width:600px){
-.navbar .navbar-iteam ul {
-    list-style: none;
-    padding: 0;
-
-}
-.navbar .navbar-iteam ul li{
-    margin-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid black;
-
-
-}
-.navbar .navbar-iteam ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-
- }
- .nav-btn{
-    border:none;
-    background: none;
-    border:1px solid white;
-    padding: 5px;
-    position: absolute;
-    right: 10px;
-    top: 20px;
-    cursor: pointer;
-
- }
- .nav-btn span{
-    display: block;
-    width: 20px;
-    border-top: 1px solid white;
-
- }
- .nav-btn span:not( :last-child){
-    margin-bottom: 5px;
-
- }
- .hide{
-    display: none;
-    
- }
-} 
 /* its a second part os css processing */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-html,body{
+
+html,
+body {
     height: 100%;
-    
 }
+
 nav {
     height: 100vh;
     width: 250px;
     padding: absolute;
     top: 0;
     bottom: 0;
-    background:whitesmoke;
+    background: whitesmoke;
     border-radius: 10px;
-    
-    
-
 }
-nav ul{
+
+nav ul {
     position: relative;
     list-style-type: none;
+    padding-left: 0px !important;
 }
-nav ul li a{
+
+nav ul li a {
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.15em;
-    text-decoration:none;
+    text-decoration: none;
     text-transform: capitalize;
-    color:black;
+    color: black;
     padding: 10px 30px;
-
-
 }
-nav ul li a:hover{
-    background-color:darkgray;
-    color:white;
 
+nav ul li a:hover {
+    background-color: darkgray;
+    color: white;
 }
-nav ul ul{
+
+nav ul ul {
     position: absolute;
     left: 250px;
     width: 200px;
     top: 0;
     display: none;
-
     background-color: gainsboro;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
 
 }
-nav ul  span{
-    position:absolute;
+
+nav ul span {
+    position: absolute;
     right: 20px;
     font-size: 1.5em;
 }
-nav ul .dropdown{
+
+nav ul .dropdown {
     position: relative;
 }
- nav ul .dropdown:hover ul{
+
+nav ul .dropdown:hover ul {
     display: initial;
-} 
-.image-align{
+}
+
+.image-align {
     text-align: center;
 }
-.book-item{
+
+.book-item {
     display: flex;
     flex-direction: row;
 }
-.image1{
+
+.image1 {
     padding: 40px;
-    width:300px ;
-    height:400px;
-}
-.image2{
-    padding:40px;
-    width:300px ;
-    height:400px;
-}
-.image3{
-    padding:40px;
-    width:300px ;
-    height:400px;
-}
-.image4{
-    padding: 40px;
-    width:300px ;
-    height:400px;
-}
-.image5{
-    padding:40px;
-    width:300px ;
-    height:400px;
-}
-.image6{
-    padding:40px;
-    width:300px ;
-    height:400px;
+    width: 300px;
+    height: 400px;
 }
 
-.search-bar-align{
+.search-bar-align {
     margin-left: 250px;
 }
-.logo{
-    height:40px;
-}
 
+.logo {
+    height: 40px;
+}
