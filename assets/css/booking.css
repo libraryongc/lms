@@ -53,7 +53,8 @@ p {
 }
 .topnav a {
   color: black;
-  padding: 50px;
+/*   padding: 50px; */
+  padding -left: 50px;
 }
 .navcol a {
   text-decoration: none;
